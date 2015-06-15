@@ -19,6 +19,13 @@
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+    <groupId>autodoc</groupId>
+	    <artifactId>br.com.autodoc</artifactId>
+	    <version>1.0</version>
+	    <scope>system</scope>
+	    <systemPath>${project.basedir}/src/main/resources/Mensagem.jar</systemPath>
+	</dependency>
   </dependencies>
   <profiles>
     <profile>

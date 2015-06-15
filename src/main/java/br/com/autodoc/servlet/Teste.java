@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.autodoc.entity.Email;
+import br.com.autodoc.entity.*;
 
 /**
  * Servlet implementation class teste
