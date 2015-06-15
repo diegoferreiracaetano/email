@@ -31,7 +31,6 @@
         <extension module="org.jboss.as.web"/>
         <extension module="org.jboss.as.webservices"/>
         <extension module="org.jboss.as.weld"/>
-	<extension module="org.jboss.as.messaging"/>
 
         <!-- OpenShift metrics module - disabled by default -->
         <!--
@@ -635,7 +634,7 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
 	<socket-binding name="messaging" port="5445"/>
- 	<socket-binding name="messaging-throughput" port="5455"/> 
+        <socket-binding name="messaging-throughput" port="5455"/>
         <outbound-socket-binding name="mail-smtp">
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
