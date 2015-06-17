@@ -424,7 +424,7 @@
                     </jms-queue>
 		    <jms-queue name="email">
                         <entry name="queue/Email"/>
-			<entry name="java:jboss/exported/jms/queue/test"/>
+			<entry name="java:jboss/exported/jms/queue/Email"/>
                     </jms-queue>
                     <jms-topic name="testTopic">
                         <entry name="topic/test"/>
@@ -556,7 +556,7 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
         <outbound-socket-binding name="mail-smtp">
-            <remote-destination host="localhost" port="25"/>
+            <remote-destination host="smtp.autodoc.com.br" port="587"/>
         </outbound-socket-binding>
     </socket-binding-group>
 </server>
