@@ -307,9 +307,9 @@
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:jsr77:1.0"/>
         <subsystem xmlns="urn:jboss:domain:mail:1.0">
-            <mail-session jndi-name="java:jboss/mail/Default" from="sistemas@autodoc.com.br" debug="true">
-                <smtp-server outbound-socket-binding-ref="mail-smtp">
-			<login name="sistemas@autodoc.com.br" password="sySAdOc1011"/>
+            <mail-session jndi-name="java:jboss/mail/Default" from="diegofcaetano@gmail.com" debug="true">
+                <smtp-server  ssl="true" outbound-socket-binding-ref="mail-smtp">
+			<login name="diegofcaetano@gmail.com" password="Deus_o_n_1"/>
 		</smtp-server>
             </mail-session>
         </subsystem>
@@ -558,7 +558,7 @@
         <socket-binding name="txn-recovery-environment" port="4712"/>
         <socket-binding name="txn-status-manager" port="4713"/>
         <outbound-socket-binding name="mail-smtp">
-            <remote-destination host="smtp.autodoc.com.br" port="587"/>
+            <remote-destination host="smtp.gmail.com" port="465"/>
         </outbound-socket-binding>
     </socket-binding-group>
 </server>
